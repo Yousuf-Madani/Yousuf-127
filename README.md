@@ -4,7 +4,7 @@ AIM: Analysis of CS amplifier
 
 SPECIFICATIONS: Length = 180 nm, tsmc, VDD = 1.8 V, Power budget = 50 uW.
 
-DESIGN-1:
+# DESIGN-1:
 
 ![Screenshot (9)](https://github.com/user-attachments/assets/d9fb1059-eb89-4171-b208-372857a43756)
 
@@ -49,5 +49,8 @@ Transient analysis:
 
 AC analysis: 
  1. The ac response of the circuit confirms that the circuit remains stable at different frequencies.
- 2. the 
- 
+
+Inference:
+
+From the above experiment we conclude that by choosing the right values of width and length we can design the desired circuit with desired current flowing through it. We also observed that by increasing the value of width the drain current also increases and decreasing the width of the nmos the drain current also decreases.
+
