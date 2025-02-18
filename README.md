@@ -54,3 +54,73 @@ Inference:
 
 From the above experiment we conclude that by choosing the right values of width and length we can design the desired circuit with desired current flowing through it. We also observed that by increasing the value of width the drain current also increases and decreasing the width of the nmos the drain current also decreases.
 
+# Design-2
+
+![Screenshot (9)](https://github.com/user-attachments/assets/7a7a9895-2e58-4866-ad28-9ddd0f4ccde3)
+
+Aim : To find DC operating point find gain using transient analysis and AC analysis.
+
+Components:
+Mosfets M1 and M2 DC power supply.
+
+Procedure:
+1. Make the circuit connections as show abovce.
+2. Connect dc power supply to the gate terminal.
+3. Connect the source terminal to the ground.
+4. Set the input voltage by obtaining Vtc curve and Vdd to 1.8 V.
+5. Using the Formula for Power
+   P=vi
+   We will get the Values of Id
+   Id= 27uA
+   We have to get the output current Id for the given circuits by adjusting the values of L & W of both the MOSFETS by 
+   adjusting the value of width and length of the mosfet we will get the current Id.
+   As length is given 180nm by adjusting we will get width=0.61um this value of width and length is for both the mosfet
+
+ 1.DC Analysis:
+ To perform the DC analysis we have to select the {DC op pnt} in the edit simulation command and run the simulation
+ the figure below is the values obtained from the DC analysis.
+
+ ![Screenshot (10)](https://github.com/user-attachments/assets/08c5ad4b-102c-4dd5-b716-61159345edc1)
+
+ 2. Transient Analysis:
+    To perform transient analysis we have to select the transient analysis in the edit simulation
+   and give the stop time as 5ms and run the simulation.
+   The below shown graph is obtained.
+
+![image](https://github.com/user-attachments/assets/7d031fb9-f0c7-439e-8d66-d0b843c6b10e)
+
+3. AC analysis:
+   We enter the values to get the ac analysis as shown below.
+
+   ![image](https://github.com/user-attachments/assets/f195c4b8-8f05-40e5-9512-1a5b792679c1)
+
+RESULTS:
+
+  1.DC analysis
+  
+  
+  The calculated drain current Id aligns with the expected value based on power and voltage  where the value of Id = 27um 
+  By fine-tuning the channel dimensions  of both MOSFETs  the desired current was achieved L=180nm and W=0.61um for both mosfets
+  The circuit operates correctly within the selected DC parameters 
+
+  
+  2.Transient Analysis:
+
+  The transient response graph confirms that the circuit transitions smoothly over time.
+  The circuit responds effectively to input variations, indicating stable operation.
+
+  
+  3.AC Analysis:
+
+  The AC response graph confirms that the circuit maintains stability over the tested frequency range.
+  The circuit functions as expected under AC conditions.
+
+
+  INFERENCE:
+  The experiment validates that by choosing the correct mosfet dimensiions the drain current can be effectively regulated.
+  The voltage transfer characteristics  helped to select the correct operating voltage  for saturation.
+  M1  has a stronger influence on ID, meaning its width significantly affects the output current  Increase in width increases Id  and vice-versa.
+  M2 has a smaller influence on ID  meaning changes in its width result in only minor changes  in Id. Increase in width increases ID by small 
+  value and vice-versa.
+
+
