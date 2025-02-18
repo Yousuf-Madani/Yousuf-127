@@ -56,7 +56,8 @@ From the above experiment we conclude that by choosing the right values of width
 
 # Design-2
 
-![Screenshot (9)](https://github.com/user-attachments/assets/7a7a9895-2e58-4866-ad28-9ddd0f4ccde3)
+![Screenshot (14)](https://github.com/user-attachments/assets/77363cad-47dd-46c5-aaed-4c98c9a6b92a)
+
 
 Aim : To find DC operating point find gain using transient analysis and AC analysis.
 
