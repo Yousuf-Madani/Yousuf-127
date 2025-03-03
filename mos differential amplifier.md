@@ -61,6 +61,9 @@ In the following circuit we have given same input to both the mosfet which is no
 
 CIRCUIT: 
 
+![Screenshot (24)](https://github.com/user-attachments/assets/7b1252d2-5886-4144-aeeb-536c1f3376ae)
+
+
 
 
 
