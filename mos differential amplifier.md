@@ -112,7 +112,14 @@ As we can see that the above calculated theory value of gain in dB matches the p
 
 ### Circuit2: Common source terminal connected to current source
 
-Now first 
+Now first let us understand what is the need to replace the resistor which is present at source end by a current source: 
+1. If in any case the common mode input has any minor changes in its value at the source it might vary the source terminal voltage because the current Id changes.
+2. Which also might lead instability in biasing point.
+3. By adding a current source we can imporve the common mode rejection ratio.
+
+For the above circuit when resistor was present at the source terminal when we make some slight changes in the common mode input it causes changes in the operating voltages which is not diserable. In the below example I made slight changes in the dc offset of the input due to which the operating voltges changed drastically.
+
+
 
 
 
