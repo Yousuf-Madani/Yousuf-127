@@ -31,10 +31,11 @@ Id1 = Id2 = 0.5mA
 Rd = (Vdd - Vocm)/Id1  
 Rd = 1.9kohm                      
 Similarly, Vp = o.4, Iss = 1mA
-Similarly, Vp = o.4, Iss = 1mA
+Rss = (Vdd-Vocm)/Id1
+Rss = o.4kohm
 Vds = Vd - Vs
-      1.25 - 0.4
-      0.28
+    = 1.25 - 0.4
+    = 0.85V
 
 The above are the obtained values for the provided design.
 
