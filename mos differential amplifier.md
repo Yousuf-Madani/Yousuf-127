@@ -63,7 +63,56 @@ CIRCUIT:
 
 ![Screenshot (24)](https://github.com/user-attachments/assets/7b1252d2-5886-4144-aeeb-536c1f3376ae)
 
+DC Analysis: 
 
+In the dc analysis we find out the dc operating point also known as the q point by varying the aspect ratio of the mosfet. Here in the differential pair it becomes necessary to keep the aspect ratio that is ratio of the width and lenght to be same. The aim is to get the precise value of Vocm by altering the value of the aspect ratio of the two mosfets. 
+
+The obtained values of aspect ratio are L = 180nm and W = 6.41246um
+
+![image](https://github.com/user-attachments/assets/4f5dd7a6-7cbc-4dab-bd8b-5f479a00d7ff)
+
+By setting the values of L and W we were able to obtain the perfect operating point.
+
+From the above we can observe that: 
+1. The drain currents in both mosfets are the same that is 0.5mA
+2. For the same input the output is also same that is equal to 1.25V
+3. Now as the output is same if we take the difference it is equal to 0, so we can conclude that differential amplifier is effectively rejecting the common mode voltage.
+
+Transient Analysis:
+
+In the transient analysis we apply a time varying signal by giving it some initial dc offset value to ensure that the mos remains in operateing region. The obtained ouput for the trnsient analysis is as follows
+
+![image](https://github.com/user-attachments/assets/99afe131-a23b-4112-a020-3aa24df03f32)
+
+Now in the above graph we have obtained the graph between output and input. From which we can calculate the voltage gain of the circuit from the following formula that is , 
+
+                    Gain = Av = Vout(p-p)/Vin(p-p)
+
+                    Av = (1.3219 - 1.1788)/(1.2488 - 1.1508)
+
+                    Av = 1.4602
+
+We have obtained the gain now to obtain the gain in dB we know that 
+
+                   gain in dB = 20logAv
+
+                              = 20log(1.4602)
+
+                              = 3.288
+
+The above obtained gain in dB should be approximately equal to ac anlyisis gain in dB. 
+
+AC Analysis: 
+
+In the ac analysis we obtain the frequency response of the circuit and we will not be able to see the low frequency region in graph due to the absence of bypass or coupling capcitor. The obtained graph is as follows: 
+
+![image](https://github.com/user-attachments/assets/c389b08c-af90-4ef5-a9a9-a3aa9a66077f)
+
+As we can see that the above calculated theory value of gain in dB matches the practical value that is 3.288.
+
+### Circuit2: Common source terminal connected to current source
+
+Now first 
 
 
 
