@@ -21,9 +21,9 @@ Now this experiment is done in three stages by changing the components connected
 
 ### Design 
 Given                   
-P = 2.2mW               Therefore, Iss = 1mA
-VI = 2.2mW                     Id1 = Id2 = Iss/2
-I = 2.2/2.2                    Id1 = Id2 = 0.5mA
+P = 2.2mW                       Therefore, Iss = 1mA
+VI = 2.2mW                          Id1 = Id2 = Iss/2
+I = 2.2/2.2                          Id1 = Id2 = 0.5mA
 I = 1mA
 
 Rd = (Vdd - Vocm)/Id1   Similarly, Vp = o.4, Iss = 1mA
