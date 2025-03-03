@@ -119,6 +119,27 @@ Now first let us understand what is the need to replace the resistor which is pr
 
 For the above circuit when resistor was present at the source terminal when we make some slight changes in the common mode input it causes changes in the operating voltages which is not diserable. In the below example I made slight changes in the dc offset of the input due to which the operating voltges changed drastically.
 
+![image](https://github.com/user-attachments/assets/d0e64089-6a5f-4899-b70d-0c38e02ccb19)
+
+Now let us start with the circuit 2 to deal with this problem that to make the source voltage independent of minor changes in the common mode input voltages. 
+
+For the same circuit we just replace the resistor with current source and the value given to current source is nothing but value equivalent to Iss obtained during the designing that is equal to 1mA.
+
+![image](https://github.com/user-attachments/assets/4d8d9895-26da-4f31-a190-63dddf1cbe45)
+
+DC Analysis: 
+
+We set the Vicm to desired value and fix the dc value of the current source as per the design so we obtain the following table of the operating point: 
+
+![image](https://github.com/user-attachments/assets/705f8f99-1f5c-4b68-8ac2-7b65c665deab)
+
+We obtain the desired values of operating point and withing the given power budget and also the current flowing through each mosfet is obtained as per the design.
+
+Transient Analysis:
+
+In the tra
+
+
 
 
 
