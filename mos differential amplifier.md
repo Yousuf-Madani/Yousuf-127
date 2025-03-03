@@ -7,6 +7,7 @@ The differential mos amplifier configuration is the most widely used building bl
 2. These differential amplifier also suppresses the common mode signals like the dc offset, noise signal, power supply noise etc.
 
 The MOS differential amplifier is formed using two identical common source mosfet amplifiers. These common source mosfets are identical is all sense that is they same device characteristics, same biasing and moreover they have same drain resistors. Therefore both amplifier will provide the same gain.The differential pair consist of two transistors M1 and M2(common source mos amplifiers), whose sources are joined together. If two transistor are connected to the different voltage input then there current across M1 and M2 are different due to gate voltage.If in case the voltage supply at gate terminal is same then the current through the M1 and M2 are same (Im1=Im2).This configuration is called Common Mode input voltage differential Amplifier.
+
 ![image](https://github.com/user-attachments/assets/34cb8670-b244-4816-8d69-b5afd5793ba9)
 
 ### Question:
@@ -48,10 +49,21 @@ Rss = o.4kohm
 
 Vds = Vd - Vs
 
-    = 1.25 - 0.4
+Vds = 1.25 - 0.4
     
-    = 0.85V
+Vds = 0.85V
 
 The above are the obtained values for the provided design.
+
+## Circuit1 : The common source terminal is connected to the resistor
+
+In the following circuit we have given same input to both the mosfet which is nothing but the common mode input. The resistor connected at the drain end is nothing but the load to obtain in output. And at the source terminal both the source have been connected together which it turn connected to resistor Rss in which current Iss which is the summ of Id1 and Id2 flows.
+
+CIRCUIT: 
+
+
+
+
+ 
 
 
