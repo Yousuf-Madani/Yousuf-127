@@ -20,21 +20,36 @@ Now this experiment is done in three stages by changing the components connected
 3. Mosfet
 
 ### Design 
-Given                   
-P = 2.2mW                      
-VI = 2.2mW                          
+Given 
+
+P = 2.2mW
+
+VI = 2.2mW
+
 I = 2.2/2.2                          
+
 I = 1mA
+
 Therefore, Iss = 1mA
+
 Id1 = Id2 = Iss/2
+
 Id1 = Id2 = 0.5mA
+
 Rd = (Vdd - Vocm)/Id1  
+
 Rd = 1.9kohm                      
+
 Similarly, Vp = o.4, Iss = 1mA
+
 Rss = (Vdd-Vocm)/Id1
+
 Rss = o.4kohm
+
 Vds = Vd - Vs
+
     = 1.25 - 0.4
+    
     = 0.85V
 
 The above are the obtained values for the provided design.
