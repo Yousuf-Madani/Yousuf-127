@@ -137,7 +137,68 @@ We obtain the desired values of operating point and withing the given power budg
 
 Transient Analysis:
 
-In the tra
+In the transient analysis we find the gain of the mos differential pair by observing the vout and vin graph. 
+
+![image](https://github.com/user-attachments/assets/d8c356d5-5142-45be-a2af-fc2f02affb3a)
+
+As in graph we obtain the output and input plots from which find the gain Av
+
+        Gain = Av = Vout(p-p)/Vin(p-p)
+
+                  = (1.4492-1.0508)/(1.2496-1.1503)
+
+                  = 4.0120
+
+As we can observe that the gain in the previous circuit was 1.4062 when resistor was used but now when the current source has been used the gain has increased significantly to 4.0120. This happens due to many reasons one of the reason is that
+
+              we know that, Av = gm x Rout 
+
+                               Rout increases the gain of the circuit also increases 
+
+                                so in case of current source it has high output resistance which lead to increase in the overall gain.
+
+AC analysis: 
+
+In this we obtain the frequency response of the circuit and also observe the gain in dB
+
+![image](https://github.com/user-attachments/assets/7f20bb24-39b7-4ba5-a0ae-d8dfcc40ec26)
+
+As it can be seen in the graph the gain in dB is around 6.108dB
+
+### Circuit 3: Connecting mosfet to the source terminal 
+
+Now at the place of current source we replace it with the nmos which should have its drain current equal to the value of Iss which is the sum of both drain currents of mos M1 and M2. Now to obtain that desired current from mosfet we need to set the aspect ratio accordingly.
+
+CIRCUIT: 
+
+![image](https://github.com/user-attachments/assets/e6efc515-3601-410f-b5db-d71147a9e727)
+
+
+DC Analysis:
+
+Here as we have replaced the current source with the mosfet so now to make current through the mosfet M3 equal to 1mA we need to set aspect ratio of the mosfet so as to get the desired current and stable operating point. The obtained values of L and W are as follows
+
+![image](https://github.com/user-attachments/assets/5c4856f0-e93e-4a7d-b1f8-1e90047e48fb)
+
+By setting these values the obtained values by the dc analysis are: 
+
+![image](https://github.com/user-attachments/assets/fbdfa2e3-b2d8-4979-a87d-ac35941071ef)
+
+We have obatained a stable operating point.
+
+Transient Analysis: 
+
+![image](https://github.com/user-attachments/assets/f9bab87d-a708-412a-ba09-89b2e0930ee6)
+
+From the above graph the obtained gain is as follows: 
+
+              Gain = Av = Vout(p-p)/Vin(p-p)
+
+              
+
+
+
+
 
 
 
