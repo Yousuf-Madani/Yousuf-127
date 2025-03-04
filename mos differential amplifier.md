@@ -188,13 +188,42 @@ We have obatained a stable operating point.
 
 Transient Analysis: 
 
-![image](https://github.com/user-attachments/assets/f9bab87d-a708-412a-ba09-89b2e0930ee6)
+![image](https://github.com/user-attachments/assets/6f74577d-15e7-41ca-a9e0-3fd529128325)
 
 From the above graph the obtained gain is as follows: 
 
               Gain = Av = Vout(p-p)/Vin(p-p)
 
-              
+                   = (1.4492-1.0508)/(1.2496-1.1503)
+
+                   = 4.0120
+
+             Gain in dB = 20 x log x Av
+
+                        = 20 x log x 4.0120
+
+                        = 12.067dB
+
+AC analysis: 
+
+![image](https://github.com/user-attachments/assets/aec400b7-a2cf-4ad4-87ee-d0df5c23f4a7)
+
+The above obtained Ac anlysis confirms that theoretically obtained value of gain in dB matches approximately to the practical value.
+
+ The Gain in dB obtained is 12.12dB which is same as the gain in dB obtained in the above calculation that is 12.067.
+
+ ### Inference: 
+
+ In the above experiment we saw the 3 different configurations of differential mosfet's depending on which component is present at the tail of the differential mosfet. Each configuration have their own advantages and disadvantages. The 3 config are as follows Resistor, current source, and NMOS.
+
+ 1. When we use resistor in that case we saw that gain was low. And we also saw that if there is any small change in the common mode input the source voltage changed and also the current through the mosfet also changed so we can say that in the configuration where we connect resistor at the source terminal it will have a very low common mode rejection rate(CMRR).
+ 2. In case of the current source we saw that we obtained a drastically increased gain it is due to the reason that current source have a high output resistance than compared to the resistor configuration so we obtain a high gain in case of current source. We also saw that if there is a small change in the common mode input the source voltage remained the same which tells us that this configuration forces the drain currents of the mosfet to stay stable and hence the source voltage doesnt change which in turn says that it has a high common mode rejection rate(CMRR).
+ 3. 
+ 
+
+
+
+ 
 
 
 
