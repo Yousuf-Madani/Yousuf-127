@@ -218,7 +218,7 @@ The above obtained Ac anlysis confirms that theoretically obtained value of gain
 
  1. When we use resistor in that case we saw that gain was low. And we also saw that if there is any small change in the common mode input the source voltage changed and also the current through the mosfet also changed so we can say that in the configuration where we connect resistor at the source terminal it will have a very low common mode rejection rate(CMRR).
  2. In case of the current source we saw that we obtained a drastically increased gain it is due to the reason that current source have a high output resistance than compared to the resistor configuration so we obtain a high gain in case of current source. We also saw that if there is a small change in the common mode input the source voltage remained the same which tells us that this configuration forces the drain currents of the mosfet to stay stable and hence the source voltage doesnt change which in turn says that it has a high common mode rejection rate(CMRR).
- 3. 
+ 3. Now when we use nmos at the source terminal it will provide increased bandwidth on basis of the resistance provided by the nmos, it also can provide high gain.
  
 
 
