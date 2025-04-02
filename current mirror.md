@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7dd8abbe-19ba-44fe-82f9-8c61b8788133)# Design and analyze current mirror circuit as active load in cs amplifier circuit
+# Design and analyze current mirror circuit as active load in cs amplifier circuit
 
 Before starting with the experiment we need to know what is necessity of replacing the resistive load with current mirror circuit as active load.
 So let us perform the experiment with resistive load and analyze the circuit and then perform experiment on the current mirror circuit as active load.
