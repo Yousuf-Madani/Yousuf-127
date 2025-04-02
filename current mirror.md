@@ -1,4 +1,4 @@
-# Design and analyze current mirror circuit as active load in cs amplifier circuit
+![image](https://github.com/user-attachments/assets/43208426-7977-48b2-916c-2d4bedfd0ad7)# Design and analyze current mirror circuit as active load in cs amplifier circuit
 
 Before starting with the experiment we need to know what is necessity of replacing the resistive load with current mirror circuit as active load.
 So let us perform the experiment with resistive load and analyze the circuit and then perform experiment on the current mirror circuit as active load.
@@ -14,6 +14,11 @@ Above is the design of the cs amplifier with a resitive load and also the width 
 ![image](https://github.com/user-attachments/assets/581a5caf-c6cb-4c04-8348-c40d8bd755be)
 
 As it can be seen that the current through the mos is 1mA and it is in saturation.
+Now let us also setup the cs amplifier with current mirror resistive load which also has 1ma current flowing through it.
+
+![image](https://github.com/user-attachments/assets/24e4e964-73ae-4d4d-879e-9bdc58bae98f)
+
+As we can see that the cs amplifier is set perfectly to operating point as it can be seen in the dc analysis.
 
 ## COMPARISION PARAMETERS
 ### GAIN
