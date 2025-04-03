@@ -60,4 +60,10 @@ Circuit 2:
 
 As we can clearly see from the obtained result that the output resistance in case of current mirror circuit is 1000 times greater than the output resistance in case of resistive load.
 
+There are many more comparision parameters which can be used for comparision but for now keeping the above parameters in mind it becomes clear to use current mirror as load in the cs amplifier circuit.
+
+## Design Question:
+
+   
+
 
