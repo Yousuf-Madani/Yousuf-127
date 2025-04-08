@@ -64,6 +64,72 @@ There are many more comparision parameters which can be used for comparision but
 
 ## Design Question:
 
-   
+Design a current mirror circuit which has a gain of AV = -10V/V, power supply of Vdd = 1.8V, and power of P <= 1mW. Find reference current (Iref), output current (Id), and total current (Itotal). Perform DC and AC analysis for mirror ratio 1:1, 1:2. Vary length from 180nm -> 500nm -> 1µm and do the analysis.
+
+Below shown is the calculation to find out the total current wrt to the given power rating.
+![WhatsApp Image 2025-04-05 at 08 29 45_f99a642b](https://github.com/user-attachments/assets/f89d2022-10fd-4cb4-b4ff-318aad0f2f5d)
+
+Designing the circuit as per the above calculation:
+
+![image](https://github.com/user-attachments/assets/a87fd3da-fc32-442f-859b-022c5389d3dd)
+
+DC analysis:
+
+![image](https://github.com/user-attachments/assets/1cbf452d-b0a0-43b1-9897-cf181561b41c)
+
+As it can be clearly seen that by the analysis of the gate drain and source voltages all the mosfet are in saturation and the current is being perfectly mirrored after setting the w/l of the nmos where L = 180nm and W = 18.053u.
+
+Transient analysis:
+
+![image](https://github.com/user-attachments/assets/a2bd5c4b-d431-487b-a298-c200543e3580)
+
+The above shown waveform is the output waveform the circuit, the input given is having a dc offset of 0.6V with a amplitude of 10m whereas the output voltage is 1.40V.
+
+AC analysis:
+
+![image](https://github.com/user-attachments/assets/abfe00f8-6e2a-4f6a-b391-56300ad1021b)
+
+The gain in dB obtained is 29.881dB
+29.881 - 3 = 26.881dB
+58.833Mhz is the High frequency.
+Therefore the bandwidth of the circuit is fH - fL = 58.833Mhz - 0 = 58.833Mhz.
+
+### Now performing the circuit analysis when the ratio is 1:2
+
+Initially W = 70u
+Now for the ratio 1:2 the new value of W is 140u.
+As total current is 0.55mA, it is divided into 3 parts, where 1/3 of current is its reference current Iref and remaining is the output current Id.
+i.e 0.55m / 3 = 0.183mA.
+Hence, Iref = 0.183mA and Id = 0.3667mA
+
+DC Analysis:
+
+![image](https://github.com/user-attachments/assets/8f040228-c318-4111-93a1-68573af84f8a)
+
+The current is set as per the above calculation and all voltages are prefectly set such all the three mos are in saturation.
+
+Transient Analysis:
+
+![image](https://github.com/user-attachments/assets/4f2dd08b-3d98-4dbc-a756-25c74e470300)
+
+The output swing for both output waveform is the same only there is small dc shift in above case.
+
+AC Analysis:
+
+![image](https://github.com/user-attachments/assets/8507bd8d-f4ba-4d11-abb1-630d73ffbb66)
+
+There is no much difference in the gain of the 1:1 and 1:2 ratio they are nearly the same.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
